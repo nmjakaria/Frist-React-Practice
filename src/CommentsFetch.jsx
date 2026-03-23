@@ -5,7 +5,7 @@ export default function Comments({ fetchComment }) {
     return (
         <div className='cardContainer' style={{ border: '2px solid green', padding: '20px', borderRadius: '10px', margin: '10px' }}>
             {
-                comments.slice(0,50).map(comment => <Comment key={comment.id} comment={comment}></Comment>)
+                comments.slice(0,10).map(comment => <Comment key={comment.id} comment={comment}></Comment>)
             }
         </div>
     )

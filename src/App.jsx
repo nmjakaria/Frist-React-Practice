@@ -46,7 +46,7 @@ function App() {
         <Friends featchFriend={fetchPromise}></Friends>
       </Suspense>
 
-      <Suspense fallback={<div style={{ border: '2px solid red', padding: '20px', borderRadius: '10px', margin: '10px' }}><h3>Loading Friends Data...</h3></div>}>
+      <Suspense fallback={<div style={{ border: '2px solid red', padding: '20px', borderRadius: '10px', margin: '10px' }}><h3>Loading Comments...</h3></div>}>
         <Comments fetchComment={promiseComment}></Comments>
       </Suspense>
 
