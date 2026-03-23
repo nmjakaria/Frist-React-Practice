@@ -1,7 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import React from 'react';
 import CounterComponent from './SetCounter';
@@ -11,6 +7,7 @@ import Friends from './Friends';
 import { Suspense } from 'react';
 import Comments from './CommentsFetch';
 import Game from './Game';
+import Countres from './component/countries/Countres';
 
 
 function App() {
@@ -51,6 +48,8 @@ function App() {
       </Suspense>
 
       <Game></Game>
+
+      <Countres></Countres>
       
     </>
   )
