@@ -1,0 +1,110 @@
+/* মেইন গেম লেআউট */
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+
+/* বোর্ড স্টাইল */
+.game-board {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* প্রতি সারির স্টাইল */
+.board-row {
+  display: flex;
+}
+
+/* প্রতিটি স্কয়ার/বাটন স্টাইল */
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: #333;
+}
+
+.square:hover {
+  background: #e1e1e1;
+}
+
+.square:focus {
+  outline: none;
+  background: #ddd;
+}
+
+/* স্ট্যাটাস টেক্সট (Winner/Next Player) */
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* গেম ইনফো ও হিস্ট্রি বাটন */
+.game-info {
+  background: #fff;
+  padding: 15px 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.game-info ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.game-info li {
+  margin-bottom: 10px;
+}
+
+/* টাইম ট্রাভেল বাটন স্টাইল */
+.game-info button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.game-info button:hover {
+  background-color: #45a049;
+}
+
+/* রেসপন্সিভ মোবাইল ডিজাইন */
+@media (max-width: 600px) {
+  .game {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .square {
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    font-size: 28px;
+  }
+}
